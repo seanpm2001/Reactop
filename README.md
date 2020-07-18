@@ -25,11 +25,13 @@
 
 [07.0 - Sources](#Sources)
 
-[08.0 - About README](#About-README)
+[08.0 - GitHub issues](#GitHub-issues)
 
-[09.0 - README Version history](#README-Version-history)
+[09.0 - About README](#About-README)
 
-[10.0 - Footer](#You-have-reached-the-end-of-the-README-file)
+[10.0 - README Version history](#README-Version-history)
+
+[11.0 - Footer](#You-have-reached-the-end-of-the-README-file)
 
 ***
 
@@ -52,15 +54,19 @@ See above
 
 ## Version history
 
-[More versions coming soon](https://www.example.com)
+1. [Version 0.01.1](https://github.com/seanpm2001/Reactop/releases/tag/V0.01.1) - 32 commits (Released: Friday, July 17th 2020 at 7:10 pm)
+
+2. [Version 0.01.2](https://github.com/seanpm2001/Reactop/releases/tag/V0.01.2) - 38 commits (Released: Friday, July 17th 2020 at 7:15 pm)
+
+[More versions coming soon](https://github.com/seanpm2001/Reactop/releases)
 
 ***
 
 ## Contributers
 
-Currently, I am the only contributer. I will not accept any other contributers, this is a personal project.
+Currently, I am the only contributer. Contributions are welcome, as long as you follow the `CONTRIBUTING.md` file. More info below.
 
-> * 1. [seanpm2001](https://github.com/seanpm2001/) - 32 commits (As of Friday, July 17th 2020 at 7:07 pm)
+> * 1. [seanpm2001](https://github.com/seanpm2001/) - 39 commits (As of Friday, July 17th 2020 at 7:25 pm)
 
 > * 2. No other contributers allowed
 
@@ -82,13 +88,25 @@ Other sources currently aren't listed.
 
 ***
 
+## GitHub issues
+
+These are the current major GitHub issues for this project.
+
+1. [Can't upload 4 files](https://github.com/seanpm2001/Reactop/issues/1)
+
+2. [Plan OneNote files missing](https://github.com/seanpm2001/Reactop/issues/2)
+
+3. No other GitHub issues listed
+
+***
+
 ## About README
 
 File type: `Markdown (*.md)`
 
-File version: `1 (Friday, July 17th 2020 at 7:07 pm)`
+File version: `2 (Friday, July 17th 2020 at 7:25 pm)`
 
-Line count (including blank lines and compiler line): `0,138`
+Line count (including blank lines and compiler line): `0,178`
 
 ***
 
@@ -122,7 +140,29 @@ Line count (including blank lines and compiler line): `0,138`
 
 > * Added the footer
 
-* Version 2 (Coming soon)
+* Version 2 (Friday, July 17th 2020 at 7:25 pm)
+
+> Changes:
+
+> * Updated the index
+
+> * Updated the version history section
+
+> * Updated the contributers section
+
+> * Added the GitHub issues section
+
+> * Updated the file info section
+
+> * Updated the README History section
+
+* Version 3 (Coming soon)
+
+> Changes:
+
+> * Coming soon
+
+* Version 4 (Coming soon)
 
 > Changes:
 
