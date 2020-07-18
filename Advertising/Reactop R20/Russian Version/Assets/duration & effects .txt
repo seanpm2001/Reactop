@@ -1,0 +1,29 @@
+transition effects and animations for reactop R20 commercial
+1 Blur - through black
+2 bow tie - horizontal
+3 filled V down
+4 diagonal - box down
+5 diagonal down-right
+6 diagonal down-right
+7 fileld V Down
+8 diagonal - cross out
+9 diagonal box out
+10 diagonal box out
+11 bow tie - vertical
+12 diagonal box-out
+13 diagonal down-right
+
+duration
+1  7 seconds
+2  5 seconds
+3  5 seconds
+4  5 seconds
+5  7 seconds
+6  4 seconds
+7  4 seconds
+8  3 seconds
+9  4.5 seconds
+10 4 seconds
+11 6 seconds
+12 5 seconds
+13 7 seconds
