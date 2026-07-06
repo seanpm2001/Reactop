@@ -1,0 +1,59 @@
+#include <linux/init.h>
+#include <linux/module.h>
+#include <linux/fs.h>
+#include <linux/uaccess.h>
+ 
+#define DEVICE_NAME "REACTOP_R20_MainConfigDriver"
+#define BUFFER_SIZE 1024
+ 
+static char buffer[BUFFER_SIZE];
+static int major;
+ 
+static ssize_t mychardev_read(struct file *filp, char __user *buf, size_t count, loff_t *f_pos) {
+    if (*f_pos >= BUFFER_SIZE)
+        return 0;
+    if (*f_pos + count > BUFFER_SIZE)
+        count = BUFFER_SIZE - *f_pos;
+    if (copy_to_user(buf, buffer + *f_pos, count))
+        return -EFAULT;
+    *f_pos += count;
+    return count;
+}
+ 
+static ssize_t mychardev_write(struct file *filp, const char __user *buf, size_t count, loff_t *f_pos) {
+    if (*f_pos >= BUFFER_SIZE)
+        return 0;
+    if (*f_pos + count > BUFFER_SIZE)
+        count = BUFFER_SIZE - *f_pos;
+    if (copy_from_user(buffer + *f_pos, buf, count))
+        return -EFAULT;
+    *f_pos += count;
+    return count;
+}
+ 
+static struct file_operations fops = {
+   .read = mychardev_read,
+   .write = mychardev_write,
+};
+ 
+static int __init mychardev_init(void) {
+    major = register_chrdev(0, DEVICE_NAME, &fops);
+    if (major < 0) {
+        printk(KERN_ALERT "Failed to register character device\n");
+        return major;
+    }
+    printk(KERN_INFO "Character device registered with major number %d\n", major);
+    return 0;
+}
+ 
+static void __exit mychardev_exit(void) {
+    unregister_chrdev(major, DEVICE_NAME);
+    printk(KERN_INFO "Character device unregistered\n");
+}
+ 
+module_init(mychardev_init);
+module_exit(mychardev_exit);
+ 
+MODULE_LICENSE("GPL");
+MODULE_AUTHOR("Your Name");
+MODULE_DESCRIPTION("A simple character device driver");
